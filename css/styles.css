@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #E9D3FF;
+}
+
+/* off-screen-menu */
+.off-screen-menu{
+    background-color: #2A4D5A;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    transition: .7s ease;
+    color: #FFEFFF;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: #471E4C;
+    color: #FFEFFF;
+}
+
+
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative; /* so spans can be positioned absolutely */
+}
+
+.ham-menu span {
+    height: 3px;
+    width: 50px;
+    background-color: #FFEFFF;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -25%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 25%) rotate(-45deg);
+}
+
+.icon {
+    width:100px;
+    height:100px;
+}
+
+#Header {
+    font-size: 45px;
+}
+
+#hero {
+    width:100%;
+    height: 400px;
+    background-image: url(../images/DALL·E-hero.webp);
+    background-position-y:center;
+    background-position-x:center;
+}
+
+
+
+
+
+/*========================================
+    CSS GRID RULES
+=========================================*/
+
+
+
+/*-------- Add Heading inside a flexbox -------*/
+
+
+
+
+
+/*-------- Tablet Media Query --------*/
+@media screen and (min-width: 769px) {
+    
+}
+/*-------- End of Tablet Media Query --------*/
+
+/*-------- Desktop Media Query --------*/
+@media screen and (min-width: 1025px) {
+    
+    
+
+}
+/*-------- End Desktop Media Query --------*/
