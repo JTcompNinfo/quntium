@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body {
     margin: 0;
     padding: 0;
     border: 0;
     background-color: #E9D3FF;
+    font-family: "Playfair Display", serif !important;
 }
+
 
 /* off-screen-menu */
 .off-screen-menu{
@@ -22,6 +25,9 @@ body {
     font-size: 3em;
     transition: .7s ease;
     color: #FFEFFF;
+}
+.off-screen-menu a, footer a {
+    color:#FFEFFF;
 }
 
 .off-screen-menu.active {
@@ -96,8 +102,22 @@ nav {
 }
 
 
+p { 
+    text-indent: 40px;
+ }
 
+ footer {
+    background-color: #2A4D5A;
+    color: #FFEFFF;
+ }
 
+ .smol {
+    font-size: 10px;
+ }
+
+ .hide-me1, .hide-me2, .hide-me3 {
+    display: none;
+ }
 
 /*========================================
     CSS GRID RULES
@@ -107,6 +127,12 @@ nav {
 
 /*-------- Add Heading inside a flexbox -------*/
 
+.con {
+    border: 5px dotted #471E4C;
+    color:#471E4C;
+    margin: 10px;
+    padding:10px;
+}
 
 
 
